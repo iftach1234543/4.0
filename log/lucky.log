@@ -1,0 +1,76 @@
+INFO | 2024-01-06 14:59:34,383 | Starting the server...
+DEBUG | 2024-01-06 14:59:34,384 | Using 10 level logging
+ERROR | 2024-01-06 14:59:34,384 | Received socket exception: [Errno 48] Address already in use
+INFO | 2024-01-06 15:00:28,135 | Starting the server...
+DEBUG | 2024-01-06 15:00:28,135 | Using 10 level logging
+INFO | 2024-01-06 15:00:28,135 | Listening for connections on port 80
+INFO | 2024-01-06 15:00:53,868 | Starting the server...
+DEBUG | 2024-01-06 15:00:53,869 | Using 10 level logging
+INFO | 2024-01-06 15:00:53,869 | Listening for connections on port 80
+INFO | 2024-01-06 15:01:00,234 | New connection received
+INFO | 2024-01-06 15:01:00,235 | Handling request for /
+INFO | 2024-01-06 15:01:00,249 | Handling request for /css/doremon.css
+INFO | 2024-01-06 15:01:00,255 | Handling request for /js/box.js
+INFO | 2024-01-06 15:01:00,259 | Handling request for /js/submit.js
+WARNING | 2024-01-06 15:01:02,262 | Connection timed out
+INFO | 2024-01-06 15:01:02,262 | Closing connection
+INFO | 2024-01-06 15:01:02,263 | New connection received
+INFO | 2024-01-06 15:01:02,264 | Handling request for /imgs/abstract.jpg
+WARNING | 2024-01-06 15:01:04,269 | Connection timed out
+INFO | 2024-01-06 15:01:04,270 | Closing connection
+INFO | 2024-01-06 15:01:04,270 | New connection received
+INFO | 2024-01-06 15:01:04,270 | Handling request for /js/jquery.min.js
+WARNING | 2024-01-06 15:01:06,275 | Connection timed out
+INFO | 2024-01-06 15:01:06,276 | Closing connection
+INFO | 2024-01-06 15:01:12,027 | New connection received
+INFO | 2024-01-06 15:01:12,027 | Handling request for /moved
+INFO | 2024-01-06 15:01:12,027 | URI Moved requested
+INFO | 2024-01-06 15:01:12,027 | Handling request for /
+ERROR | 2024-01-06 15:01:12,030 | Socket error: [Errno 54] Connection reset by peer
+INFO | 2024-01-06 15:01:12,030 | Closing connection
+INFO | 2024-01-06 15:01:12,031 | New connection received
+INFO | 2024-01-06 15:01:12,031 | Handling request for /index.html
+INFO | 2024-01-06 15:01:12,041 | Handling request for /css/doremon.css
+INFO | 2024-01-06 15:01:12,046 | Handling request for /js/box.js
+INFO | 2024-01-06 15:01:12,049 | Handling request for /js/submit.js
+WARNING | 2024-01-06 15:01:14,053 | Connection timed out
+INFO | 2024-01-06 15:01:14,053 | Closing connection
+INFO | 2024-01-06 15:01:14,054 | New connection received
+INFO | 2024-01-06 15:01:14,054 | Handling request for /imgs/abstract.jpg
+WARNING | 2024-01-06 15:01:16,057 | Connection timed out
+INFO | 2024-01-06 15:01:16,058 | Closing connection
+INFO | 2024-01-06 15:01:16,059 | New connection received
+INFO | 2024-01-06 15:01:16,059 | Handling request for /js/jquery.min.js
+WARNING | 2024-01-06 15:01:18,061 | Connection timed out
+INFO | 2024-01-06 15:01:18,061 | Closing connection
+INFO | 2024-01-06 15:01:22,758 | New connection received
+INFO | 2024-01-06 15:01:22,758 | Handling request for /,bwaf
+WARNING | 2024-01-06 15:01:24,762 | Connection timed out
+INFO | 2024-01-06 15:01:24,762 | Closing connection
+INFO | 2024-01-06 15:01:24,763 | New connection received
+WARNING | 2024-01-06 15:01:26,767 | Connection timed out
+INFO | 2024-01-06 15:01:26,767 | Closing connection
+INFO | 2024-01-06 15:01:29,394 | New connection received
+INFO | 2024-01-06 15:01:29,395 | Handling request for /error
+ERROR | 2024-01-06 15:01:29,400 | Error handling file: [Errno 32] Broken pipe
+ERROR | 2024-01-06 15:01:29,400 | Socket error: [Errno 2] No such file or directory: '/Users/iftach_1kasorla/Documents/4.0/WEB-ROOT/imgs/server_error.jpg'
+INFO | 2024-01-06 15:01:29,401 | Closing connection
+INFO | 2024-01-06 15:01:29,873 | New connection received
+INFO | 2024-01-06 15:01:29,873 | Handling request for /error
+WARNING | 2024-01-06 15:01:31,883 | Connection timed out
+INFO | 2024-01-06 15:01:31,884 | Closing connection
+INFO | 2024-01-06 15:01:31,884 | New connection received
+WARNING | 2024-01-06 15:01:33,889 | Connection timed out
+INFO | 2024-01-06 15:01:33,890 | Closing connection
+INFO | 2024-01-06 15:01:42,455 | New connection received
+INFO | 2024-01-06 15:01:42,455 | Handling request for /forbidden
+ERROR | 2024-01-06 15:01:42,458 | Error handling file: [Errno 41] Protocol wrong type for socket
+ERROR | 2024-01-06 15:01:42,458 | Socket error: [Errno 2] No such file or directory: '/Users/iftach_1kasorla/Documents/4.0/WEB-ROOT/imgs/server_error.jpg'
+INFO | 2024-01-06 15:01:42,459 | Closing connection
+INFO | 2024-01-06 15:01:42,919 | New connection received
+INFO | 2024-01-06 15:01:42,920 | Handling request for /forbidden
+WARNING | 2024-01-06 15:01:44,929 | Connection timed out
+INFO | 2024-01-06 15:01:44,930 | Closing connection
+INFO | 2024-01-06 15:01:44,930 | New connection received
+WARNING | 2024-01-06 15:01:46,931 | Connection timed out
+INFO | 2024-01-06 15:01:46,932 | Closing connection

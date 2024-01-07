@@ -52,6 +52,8 @@ URI_MOVED = '/moved'
 URI_ERROR = '/error'
 
 
+# ... (previous code remains unchanged)
+
 def handle_client_request(resource, client_socket):
     """
     Handles client requests based on the requested resource.
@@ -72,7 +74,7 @@ def handle_client_request(resource, client_socket):
 
     try:
         if uri == URI_FORBIDDEN:
-            forbidden_img_filename = os.path.join(WEBROOT, 'imgs', 'forbidden.jpg')  # Change 'forbidden.jpg' to your forbidden image name
+            forbidden_img_filename = 'forbidden.jpg'  # Change '/path/to/forbidden.jpg' to the actual path of your forbidden image
             with open(forbidden_img_filename, 'rb') as img_file:
                 img_data = img_file.read()
                 img_content_length = len(img_data)
@@ -81,7 +83,7 @@ def handle_client_request(resource, client_socket):
             img_response = HTTP_403_FORBIDDEN + img_content_type + img_content_length_header + b'\r\n' + img_data
             client_socket.sendall(img_response)
         elif uri == URI_ERROR:
-            error_img_filename = os.path.join(WEBROOT, 'imgs', 'error.jpg')  # Change 'error.jpg' to your error image name
+            error_img_filename = 'error.jpg'  # Change '/path/to/error.jpg' to the actual path of your error image
             with open(error_img_filename, 'rb') as img_file:
                 img_data = img_file.read()
                 img_content_length = len(img_data)
@@ -89,7 +91,6 @@ def handle_client_request(resource, client_socket):
             img_content_length_header = CONTENT_LENGTH_HEADER + str(img_content_length).encode() + b'\r\n'
             img_response = HTTP_500_INTERNAL_ERROR + img_content_type + img_content_length_header + b'\r\n' + img_data
             client_socket.sendall(img_response)
-
         elif uri == URI_MOVED:
             logging.info("URI Moved requested")
             response = HTTP_302_TEMP_REDIRECT + b'Location: /index.html\r\n\r\n'
@@ -98,6 +99,7 @@ def handle_client_request(resource, client_socket):
             handle_client_request('/', client_socket)
             return
         else:
+            # Handle other URIs and serve files from the WEBROOT directory
             filename = os.path.join(WEBROOT, uri.strip('/'))
             if os.path.isdir(filename):
                 filename = os.path.join(filename, 'index.html')
@@ -112,7 +114,8 @@ def handle_client_request(resource, client_socket):
             response = HTTP_200_OK + content_type + content_length_header + b'\r\n' + data
             client_socket.sendall(response)
     except FileNotFoundError:
-        not_found_img_filename = os.path.join(WEBROOT, 'imgs', 'not_found.jpg')  # Change 'not_found.jpg' to your not found image name
+        # For 404 Not Found, serve an image from outside the WEBROOT directory
+        not_found_img_filename = 'not_found.jpg'  # Change '/path/to/not_found.jpg' to the actual path of your not found image
         with open(not_found_img_filename, 'rb') as img_file:
             img_data = img_file.read()
             img_content_length = len(img_data)
@@ -122,7 +125,8 @@ def handle_client_request(resource, client_socket):
         client_socket.sendall(img_response)
     except Exception as e:
         logging.error(f"Error handling file: {str(e)}")
-        server_error_img_filename = os.path.join(WEBROOT, 'imgs', 'server_error.jpg')  # Change 'server_error.jpg' to your server error image name
+        # For other errors, serve an image from outside the WEBROOT directory
+        server_error_img_filename = 'error.jpg'  # Change '/path/to/server_error.jpg' to the actual path of your server error image
         with open(server_error_img_filename, 'rb') as img_file:
             img_data = img_file.read()
             img_content_length = len(img_data)
@@ -130,6 +134,7 @@ def handle_client_request(resource, client_socket):
         img_content_length_header = CONTENT_LENGTH_HEADER + str(img_content_length).encode() + b'\r\n'
         img_response = HTTP_500_INTERNAL_ERROR + img_content_type + img_content_length_header + b'\r\n' + img_data
         client_socket.sendall(img_response)
+
 
 
 
@@ -242,6 +247,20 @@ if __name__ == "__main__":
     assert isinstance(SOCKET_TIMEOUT, int), "SOCKET_TIMEOUT should be an integer"
     assert isinstance(REDIRECTION_DICTIONARY, dict), "REDIRECTION_DICTIONARY should be a dictionary"
     assert isinstance(WEBROOT, str), "WEBROOT should be a string"
+
+
+    # Test the validate_http_request function
+    sample_request = b'GET /index.html HTTP/1.1\r\nHost: localhost\r\n\r\n'
+    sample_request1 = b'GET/index.htmlHTTP/1.1\r\nHost: localhost\r\n\r\n'
+    valid, resource = validate_http_request(sample_request)
+    valid1 , resource1 = validate_http_request(sample_request1)
+
+    # Assert the function output matches the expected result
+    assert not valid1
+    assert valid, "Expected a valid HTTP request"
+    assert resource == '/index.html', "Expected resource '/index.html'"
+
+
 
     # Start logging and the server
     if not os.path.isdir(LOG_DIR):

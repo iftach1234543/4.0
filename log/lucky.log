@@ -74,3 +74,146 @@ INFO | 2024-01-06 15:01:44,930 | Closing connection
 INFO | 2024-01-06 15:01:44,930 | New connection received
 WARNING | 2024-01-06 15:01:46,931 | Connection timed out
 INFO | 2024-01-06 15:01:46,932 | Closing connection
+INFO | 2024-01-07 22:35:56,842 | Starting the server...
+DEBUG | 2024-01-07 22:35:56,842 | Using 10 level logging
+INFO | 2024-01-07 22:35:56,842 | Listening for connections on port 80
+INFO | 2024-01-07 22:36:01,087 | New connection received
+INFO | 2024-01-07 22:36:01,088 | Handling request for /
+INFO | 2024-01-07 22:36:01,104 | Handling request for /css/doremon.css
+INFO | 2024-01-07 22:36:01,108 | Handling request for /js/box.js
+INFO | 2024-01-07 22:36:01,110 | Handling request for /js/submit.js
+WARNING | 2024-01-07 22:36:03,115 | Connection timed out
+INFO | 2024-01-07 22:36:03,116 | Closing connection
+INFO | 2024-01-07 22:36:03,116 | New connection received
+INFO | 2024-01-07 22:36:03,118 | Handling request for /imgs/abstract.jpg
+WARNING | 2024-01-07 22:36:05,123 | Connection timed out
+INFO | 2024-01-07 22:36:05,123 | Closing connection
+INFO | 2024-01-07 22:36:05,124 | New connection received
+INFO | 2024-01-07 22:36:05,124 | Handling request for /js/jquery.min.js
+INFO | 2024-01-07 22:36:06,135 | Handling request for /moved
+INFO | 2024-01-07 22:36:06,135 | URI Moved requested
+INFO | 2024-01-07 22:36:06,135 | Handling request for /
+ERROR | 2024-01-07 22:36:06,136 | Socket error: [Errno 54] Connection reset by peer
+INFO | 2024-01-07 22:36:06,137 | Closing connection
+INFO | 2024-01-07 22:36:06,137 | New connection received
+INFO | 2024-01-07 22:36:06,140 | Handling request for /index.html
+INFO | 2024-01-07 22:36:06,156 | Handling request for /css/doremon.css
+INFO | 2024-01-07 22:36:06,159 | Handling request for /imgs/abstract.jpg
+WARNING | 2024-01-07 22:36:08,162 | Connection timed out
+INFO | 2024-01-07 22:36:08,163 | Closing connection
+INFO | 2024-01-07 22:36:08,163 | New connection received
+INFO | 2024-01-07 22:36:08,163 | Handling request for /js/jquery.min.js
+WARNING | 2024-01-07 22:36:10,168 | Connection timed out
+INFO | 2024-01-07 22:36:10,168 | Closing connection
+INFO | 2024-01-07 22:36:10,169 | New connection received
+INFO | 2024-01-07 22:36:10,169 | Handling request for /js/box.js
+WARNING | 2024-01-07 22:36:12,175 | Connection timed out
+INFO | 2024-01-07 22:36:12,175 | Closing connection
+INFO | 2024-01-07 22:36:12,176 | New connection received
+INFO | 2024-01-07 22:36:12,176 | Handling request for /js/submit.js
+WARNING | 2024-01-07 22:36:14,179 | Connection timed out
+INFO | 2024-01-07 22:36:14,180 | Closing connection
+INFO | 2024-01-07 22:36:16,490 | New connection received
+INFO | 2024-01-07 22:36:16,490 | Handling request for /forbidden
+ERROR | 2024-01-07 22:36:16,495 | Error handling file: [Errno 32] Broken pipe
+ERROR | 2024-01-07 22:36:16,497 | Socket error: [Errno 32] Broken pipe
+INFO | 2024-01-07 22:36:16,497 | Closing connection
+INFO | 2024-01-07 22:36:16,961 | New connection received
+INFO | 2024-01-07 22:36:16,961 | Handling request for /forbidden
+INFO | 2024-01-07 22:36:16,994 | Handling request for /favicon.ico
+WARNING | 2024-01-07 22:36:19,000 | Connection timed out
+INFO | 2024-01-07 22:36:19,001 | Closing connection
+INFO | 2024-01-07 22:36:19,001 | New connection received
+WARNING | 2024-01-07 22:36:21,006 | Connection timed out
+INFO | 2024-01-07 22:36:21,006 | Closing connection
+INFO | 2024-01-07 22:36:23,181 | New connection received
+INFO | 2024-01-07 22:36:23,181 | Handling request for /error
+ERROR | 2024-01-07 22:36:23,186 | Error handling file: [Errno 32] Broken pipe
+ERROR | 2024-01-07 22:36:23,187 | Socket error: [Errno 32] Broken pipe
+INFO | 2024-01-07 22:36:23,188 | Closing connection
+INFO | 2024-01-07 22:36:23,922 | New connection received
+INFO | 2024-01-07 22:36:23,922 | Handling request for /error
+WARNING | 2024-01-07 22:36:25,928 | Connection timed out
+INFO | 2024-01-07 22:36:25,928 | Closing connection
+INFO | 2024-01-07 22:36:25,929 | New connection received
+WARNING | 2024-01-07 22:36:27,931 | Connection timed out
+INFO | 2024-01-07 22:36:27,931 | Closing connection
+INFO | 2024-01-07 22:36:29,483 | New connection received
+INFO | 2024-01-07 22:36:29,483 | Handling request for /lksheg
+WARNING | 2024-01-07 22:36:31,486 | Connection timed out
+INFO | 2024-01-07 22:36:31,487 | Closing connection
+INFO | 2024-01-07 22:36:31,487 | New connection received
+WARNING | 2024-01-07 22:36:33,488 | Connection timed out
+INFO | 2024-01-07 22:36:33,488 | Closing connection
+INFO | 2024-01-07 22:36:34,409 | New connection received
+INFO | 2024-01-07 22:36:34,410 | Handling request for /moved
+INFO | 2024-01-07 22:36:34,410 | URI Moved requested
+INFO | 2024-01-07 22:36:34,410 | Handling request for /
+ERROR | 2024-01-07 22:36:34,410 | Socket error: [Errno 54] Connection reset by peer
+INFO | 2024-01-07 22:36:34,410 | Closing connection
+INFO | 2024-01-07 22:36:34,411 | New connection received
+INFO | 2024-01-07 22:36:34,412 | Handling request for /index.html
+INFO | 2024-01-07 22:36:34,420 | Handling request for /css/doremon.css
+INFO | 2024-01-07 22:36:34,429 | Handling request for /js/box.js
+INFO | 2024-01-07 22:36:34,432 | Handling request for /js/submit.js
+WARNING | 2024-01-07 22:36:36,435 | Connection timed out
+INFO | 2024-01-07 22:36:36,435 | Closing connection
+INFO | 2024-01-07 22:36:36,435 | New connection received
+INFO | 2024-01-07 22:36:36,435 | Handling request for /imgs/abstract.jpg
+WARNING | 2024-01-07 22:36:38,441 | Connection timed out
+INFO | 2024-01-07 22:36:38,441 | Closing connection
+INFO | 2024-01-07 22:36:38,442 | New connection received
+INFO | 2024-01-07 22:36:38,442 | Handling request for /js/jquery.min.js
+WARNING | 2024-01-07 22:36:40,443 | Connection timed out
+INFO | 2024-01-07 22:36:40,444 | Closing connection
+INFO | 2024-01-07 22:43:16,181 | Starting the server...
+DEBUG | 2024-01-07 22:43:16,182 | Using 10 level logging
+INFO | 2024-01-07 22:43:16,182 | Listening for connections on port 80
+INFO | 2024-01-07 22:43:20,211 | New connection received
+INFO | 2024-01-07 22:43:20,211 | Handling request for /
+INFO | 2024-01-07 22:43:20,224 | Handling request for /css/doremon.css
+INFO | 2024-01-07 22:43:20,239 | Handling request for /js/box.js
+INFO | 2024-01-07 22:43:20,256 | Handling request for /js/submit.js
+WARNING | 2024-01-07 22:43:22,259 | Connection timed out
+INFO | 2024-01-07 22:43:22,259 | Closing connection
+INFO | 2024-01-07 22:43:22,260 | New connection received
+INFO | 2024-01-07 22:43:22,260 | Handling request for /imgs/abstract.jpg
+WARNING | 2024-01-07 22:43:24,263 | Connection timed out
+INFO | 2024-01-07 22:43:24,263 | Closing connection
+INFO | 2024-01-07 22:43:24,264 | New connection received
+INFO | 2024-01-07 22:43:24,264 | Handling request for /js/jquery.min.js
+INFO | 2024-01-07 22:43:25,933 | Handling request for /moved
+INFO | 2024-01-07 22:43:25,933 | URI Moved requested
+INFO | 2024-01-07 22:43:25,934 | Handling request for /
+ERROR | 2024-01-07 22:43:25,934 | Socket error: [Errno 54] Connection reset by peer
+INFO | 2024-01-07 22:43:25,934 | Closing connection
+INFO | 2024-01-07 22:43:25,937 | New connection received
+INFO | 2024-01-07 22:43:25,937 | Handling request for /index.html
+INFO | 2024-01-07 22:43:25,950 | Handling request for /css/doremon.css
+INFO | 2024-01-07 22:43:25,953 | Handling request for /imgs/abstract.jpg
+WARNING | 2024-01-07 22:43:27,957 | Connection timed out
+INFO | 2024-01-07 22:43:27,957 | Closing connection
+INFO | 2024-01-07 22:43:27,958 | New connection received
+INFO | 2024-01-07 22:43:27,958 | Handling request for /js/jquery.min.js
+WARNING | 2024-01-07 22:43:29,961 | Connection timed out
+INFO | 2024-01-07 22:43:29,961 | Closing connection
+INFO | 2024-01-07 22:43:29,961 | New connection received
+INFO | 2024-01-07 22:43:29,962 | Handling request for /js/box.js
+WARNING | 2024-01-07 22:43:31,965 | Connection timed out
+INFO | 2024-01-07 22:43:31,965 | Closing connection
+INFO | 2024-01-07 22:43:31,966 | New connection received
+INFO | 2024-01-07 22:43:31,966 | Handling request for /js/submit.js
+WARNING | 2024-01-07 22:43:33,968 | Connection timed out
+INFO | 2024-01-07 22:43:33,968 | Closing connection
+INFO | 2024-01-07 22:43:34,789 | New connection received
+INFO | 2024-01-07 22:43:34,789 | Handling request for /forbidden
+ERROR | 2024-01-07 22:43:34,792 | Error handling file: [Errno 32] Broken pipe
+ERROR | 2024-01-07 22:43:34,795 | Socket error: [Errno 32] Broken pipe
+INFO | 2024-01-07 22:43:34,795 | Closing connection
+INFO | 2024-01-07 22:43:35,242 | New connection received
+INFO | 2024-01-07 22:43:35,243 | Handling request for /forbidden
+WARNING | 2024-01-07 22:43:37,250 | Connection timed out
+INFO | 2024-01-07 22:43:37,250 | Closing connection
+INFO | 2024-01-07 22:43:37,251 | New connection received
+WARNING | 2024-01-07 22:43:39,255 | Connection timed out
+INFO | 2024-01-07 22:43:39,255 | Closing connection
